@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  nav {
+    border-bottom: 1px solid black;
+    background-color: white;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 12px;
+    /* font-weight: 600; */
+    color: black;
+  }
+
+  .nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 30px;
+  }
+
+  .login2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 30px;
+  }
+
+  .login1 {
+    font-size: 19px;
+    font-weight: 700;
+    color: blue;
+    margin-right: 30px;
+  }
+
+  .more {
+    color: orange;
+  }
+
+  .sec1 {
+
+    margin-top: 1%;
+  }
+
+  .sec1 a {
+    margin-left: 30px;
+  }
+
+  .mainimg {
+    background-image: url(https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg);
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    background-size: 100% 100%;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec2 h1 {
+    font-size: 150px;
+  }
+
+  .text {
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5%;
+    width: 50%;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .box1 {
+    background-color: yellowgreen;
+    width: 65%;
+    height: 800px;
+    position: absolute;
+    margin-top: 4%;
+    right: 0;
+  }
+
+  .img1 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=335&ixjsv=1.1.3&q=50&w=335);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 600px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+
+  .img2 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=201&ixjsv=1.1.3&q=50&w=268);
+    background-size: 100% 100%;
+    width: 35%;
+    height: 300px;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 60%;
+  }
+
+  .text1 {
+    margin-left: 25%;
+    text-align: center;
+    margin-top:75%;
+    width: 50%;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .frame {
+    margin-left: 20%;
+  }
+
+  .frametext {
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+  .text2 {
+    text-align: center;
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .box2 {
+    background-color: aquamarine;
+    width: 65%;
+    height: 900px;
+    margin-top: 5%;
+    position: absolute;
+  }
+
+  .img3 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 30%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 8%;
+    position: absolute;
+    margin-top: 15%;
+  }
+
+  .img4 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 30%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 8%;
+    position: absolute;
+    margin-top: 45%;
+  }
+
+  .img5 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop&h=395&ixjsv=1.1.3&w=395);
+    width: 40%;
+    height: 500px;
+    position: absolute;
+    margin-left: 50%;
+    background-size: 100% 100%;
+    margin-top: 22%;
+  }
+
+  .text3 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 83%;
+  }
+
+  .mainimg1 {
+    background-image: url(https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&fit=crop&fm=jpg&ixjsv=1.1.3&w=1132);
+    width: 85%;
+    height: 600px;
+    background-size: 100% 100%;
+    margin-left: 8%;
+    margin-top: 10%;
+  }
+ 
+
+  .text4 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 10%;
+  }
+
+  .box3 {
+    background-color: violet;
+    width: 65%;
+    height: 800px;
+    margin-left: 18%;
+    margin-top: 10%;
+    position: absolute;
+  }
+
+  .img6 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 30%;
+    height: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+
+  .img7 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=395&ixjsv=1.1.3&w=395);
+    width: 40%;
+    height: 600px;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0px;
+  }
+
+  .text5 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 80%;
+  }
+
+  .content1 {
+    display: flex;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  .box4 {
+    background-color: aqua;
+    width: 50%;
+    height: 500px;
+  }
+
+  .img8 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=475&ixjsv=1.1.3&w=791);
+    width: 50%;
+    height: 500px;
+    background-size: 100% 100%;
+
+  }
+
+  .box4 h3 {
+    margin-left: 25%;
+    width: 63%;
+    margin-top: 40%;
+  }
+
+  .box4 h2 {
+    color: blue;
+    width: 63%;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  footer {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 30px;
+    /* align-items: center; */
+    margin-top: 5%;
+  }
+
+  .footer1 a {
+    display: block;
+    text-decoration: none;
+  }
+
+  /* .footer1>div {
+    width: 30%;
+  } */
+  .footer1 h3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .footer1logo {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+  input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: 1px;
+    padding: 3px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .footer2 {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+
+  }
+
+  .footer2 a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .footer2>div {
+    width: 30%;
+  }
+
+  .footer3 {
+    display: flex;
+    align-items: center;
+    /* margin-top: 5%; */
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid black ; */
+  }
+
+  .footer3 a {
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .footer3logo {
+    display: flex;
+    margin-left: 5%;
+    gap: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media screen and (max-width:950px) {
+    .nav1 a {
+      display: none;
+    }
+
+    .menu {
+      display: block !important;
+    }
+
+    .mainimg {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      height:500px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      display: block;
+      margin-left: 0;
+    }
+
+    .text {
+      width: 90%;
+      height: 175px;
+      margin-right: 0%;
+      margin-left: 20%;
+      margin-top: 5%;
+    }
+
+    .text h1 {
+      font-size: 16px;
+      width: 70%;
+      margin-top:4%;
+    }
+
+    .text p {
+      width: 70%;
+      font-size: 13px;
+    }
+
+    .box1 {
+      background-color: yellowgreen;
+      width: 70%;
+      height: 450px;
+      margin-top: 1%;
+      margin-right: 0px;
+      margin-left:50%;
+      margin-bottom: 0px;
+    }
+
+    .img1 {
+      width: 40%;
+      height: 350px;
+      margin-left: 0px;
+      left: 10%;
+      top: 810px;
+    }
+
+    .img2 {
+      background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?dpr=1.25&fit=crop&h=245&ixjsv=1.1.3&w=327);
+      background-size: 100% 100%;
+      width: 40%;
+      height: 200px;
+      left:5px ;
+      margin-top: 15%;
+    }
+    .text1 {
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+  }
+
+    .text1 h1 {
+      width: 100%;
+      font-size: 20px;
+      margin-left: 10%;
+      top:10px;
+    }
+
+    .text1 p {
+      margin-left: 10%;
+      margin-top: 17%;
+    }
+
+    .frame {
+      margin-left:25%
+    }
+
+    iframe {
+      width: 80%;
+      height:250px;
+    }
+     .container{
+    height: 500px;
+  }
+   .box2 {
+    background-color: aquamarine;
+    width: 65%;
+    height: 600px;
+    margin-top: 5%;
+  }
+
+  .img3 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 40%;
+    height: 200px;
+    background-size: 100% 100%;
+    margin-left: 8%;
+    margin-top: 15%;
+  }
+
+  .img4 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 40%;
+    height: 200px;
+    background-size: 100% 100%;
+    margin-left: 8%;
+    margin-top: 40%;
+  }
+  .img5 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop&h=395&ixjsv=1.1.3&w=395);
+    width: 40%;
+    height: 300px;
+    margin-left: 50%;
+    background-size: 100% 100%;
+    margin-top: 22%;
+  }
+  .text1 {
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+  }
+  .text2 {
+    text-align: center;
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .text2 h1 {
+      width: 100%;
+      font-size: 20px;
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+    .text2 p {
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+  .text3 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top:25%;
+  }
+  .text3 h1 {
+      width: 100%;
+      font-size: 20px;
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+    .text3 p {
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+    .img6 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 40%;
+    height: 200px;
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+   .text4 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 10%;
+  }
+  .text4 h1 {
+      width: 100%;
+      font-size: 20px;
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+    .text4 p {
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+  .box3 {
+    background-color: violet;
+    width: 65%;
+    height: 450px;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .img6 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=237&ixjsv=1.1.3&w=316);
+    width: 30%;
+    height: 200px;
+    background-size: 100% 100%;
+    margin-top: 24%;
+    margin-left: 14%;
+  }
+
+  .img7 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=395&ixjsv=1.1.3&w=395);
+    width: 35%;
+    height: 350px;
+    background-size: 100% 100%;
+    margin-top: 15%;
+    margin-right: 0%;
+  }
+
+  .text5 {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 80%;
+  }
+  .text5 h1 {
+      width: 100%;
+      font-size: 20px;
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+    .text5 p {
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+.content1 {
+    display: block;
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  .box4 {
+    background-color: aqua;
+    width: 80%;
+    height: 400px;
+    top: 50%;
+  }
+
+  .img8 {
+    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=475&ixjsv=1.1.3&w=791);
+    width: 80%;
+    height: 400px;
+    background-size: 100% 100%;
+
+  }
+
+  .box4 h3 {
+    margin-left: 25%;
+    width: 63%;
+    margin-top: 40%;
+  }
+
+  .box4 h2 {
+    color: blue;
+    width: 63%;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+  footer {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .footer1 {
+    display: block;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 30px;
+    /* align-items: center; */
+    margin-top: 5%;
+  }
+
+  .footer1 a {
+    display: block;
+    text-decoration: none;
+  }
+
+  /* .footer1>div {
+    width: 30%;
+  } */
+  .footer1 h3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .footer1logo {
+    display: flex;
+    text-align: center;
+    width: 65%;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+
+  input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: 1px;
+    padding: 3px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .footer2 {
+    display: block;
+    align-items: center;
+    margin-top: 5%;
+
+  }
+
+  .footer2 a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .footer2>div {
+    width: 30%;
+  }
+
+  .footer3 {
+    display: block;
+    align-items: center;
+    width: 10%;
+    margin-top: 5%;
+  }
+
+  .footer3 a {
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .footer3logo {
+    display: flex;
+    gap: 10px;
+    margin-left: 10%;
+  }
+  }
+</style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav1">
+      <div class="nav2">
+        <img
+          src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/apple-touch-icon.fb3597184cb0.png"
+          alt="" width="30%" height="100px" />
+        <a href="" class="menu">Menu</a>
+        <a href="">Live</a>
+        <a href="">Push</a>
+        <a href="">Move</a>
+        <a href="">Note</a>
+        <a href="">Link</a>
+        <a href="">Shop</a>
+        <a href="">Packs</a>
+        <a href="">Help</a>
+        <a class="more" href="">More+</a>
+      </div>
+      <div>
+        <a class="login1" href="">Try Live 12 For Free</a>
+        <a class="login2" href="">Login in or register</a>
+      </div>
+    </div>
+  </nav>
+  <br />
+  <div class="sec1">
+    <a class="more" href="">About</a><a href="">Jobs</a><a href="">Apprenticeships</a>
+  </div>
+  <br />
+  <div class="mainimg">
+    <h1>Ableton</h1>
+  </div>
+  <div class="text">
+    <h1>
+      We make <span class="blue">Live</span>, <span class="blue">Push</span>, <span class="blue"> Note</span>, <span
+        class="blue"> Move</span>, and </span>, <span class="blue">Link</span> — unique software and hardware for music
+      creation and performance. With these products, our community of users creates amazing things.
+    </h1>
+    <p>Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community
+      of dedicated musicians, sound designers, and artists from across the world.</p>
+  </div>
+  <div class="box1"></div>
+  <div class="img1"></div>
+  <div class="img2"></div>
+  <div class="text1">
+    <h1>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly
+      rewarding.</h1>
+    <p>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we
+      make, and the people we make it for.</p>
+  </div>
+  <div class="frame">
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Why Ableton - Juanpe Bolivar</p>
+  </div>
+  <div class="text2">
+    <h1>We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our
+      offices in Los Angeles and Tokyo.</h1>
+    <p>Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a
+      wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us
+      are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to
+      contribute to something big: helping to shape the future of music culture.</p>
+  </div>
+  <div class="container">
+  <div class="box2"></div>
+  <div class="img3"></div>
+  <div class="img4"></div>
+  <div class="img5"></div>
+  </div>
+  <div class="text3">
+    <h1>We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive
+      to make them great.</h1>
+    <p>Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and
+      grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus
+      able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and
+      debate are valued and openly encouraged.</p>
+  </div>
+  <div class="mainimg1"></div>
+  <div class="text4">
+    <h1>We’re passionate about what we do, but we’re equally passionate about improving who we are.</h1>
+    <p>We work hard to foster an environment where people can grow both personally and professionally, and we strive to
+      create a wealth of opportunities to learn from and with each other.</p>
+    <p>Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills,
+      and coached on applying these in their daily work. In addition, staff-organized development and music salons are a
+      chance to discuss new technologies, production techniques and best practices.</p>
+  </div>
+  <div class="box3"></div>
+  <div class="img6"></div>
+  <div class="img7"></div>
+  <div class="text5">
+    <h1>We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will
+      do everything we can to make your transition as easy as possible.</h1>
+    <p>If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German
+      or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your
+      family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we
+      have several company and team outings throughout the year as well as a variety of fun, informal small-group
+      activities.</p>
+  </div>
+  <div class="content1">
+    <div class="img8"></div>
+    <div class="box4">
+      <h3>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part
+        of it, please join us.
+        <h2>See latest jobs</h2>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <div>
+      <h1>Ableton</h1>
+    </div>
+    <div class="footer1">
+      <div>
+        <a href="">Register Live, Push or Move</a>
+        <a href="">About Ableton</a>
+        <a href="">Jobs</a>
+        <div class="footerlogo">
+          <div class="footer1logo">
+            <a href="http://facebook.com/ableton"><img
+                src="https://static.vecteezy.com/system/resources/thumbnails/042/148/655/small/facebook-logo-facebook-social-media-icon-free-png.png"
+                alt="" width="50%" height="50px">
+            </a>
+            <a href="http://twitter.com/ableton">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/042/148/611/small/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png"
+                alt="" width="50%" height="50px">
+            </a>
+            <a href="http://youtube.com/ableton">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png"
+                alt="" width="50%" height="50px">
+            </a>
+            <a href="http://instagram.com/ableton"><img
+                src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                alt="" width="50%" height="50px">
+            </a>
+            <a href="http://tiktok.com/@ableton"><img
+                src="https://w7.pngwing.com/pngs/319/597/png-transparent-tiktok-social-media-logos-brands-icon.png"
+                alt="" width="50%" height="50px">
+            </a>
+            <a href="https://discord.com/invite/ableton"><img
+                src="https://static.vecteezy.com/system/resources/thumbnails/018/930/718/small_2x/discord-logo-discord-icon-transparent-free-png.png"
+                alt="" width="50%" height="50px"></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <a href="">Offers for students and teachers</a>
+        <a href="">Ableton for the Classroom</a>
+        <a href="">Ableton for Colleges and Universities</a>
+      </div>
+      <div>
+        <h3>Sign up to our newsletter</h3>
+        <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.
+        </p>
+        <div>
+          <input type="text"><input type="submit">
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <div>
+        <h3>community</h3>
+        <a href="">Find Ableton User Groups</a>
+        <a href="">Find Certified Training</a>
+        <a href="">Become a Certified Trainer</a>
+      </div>
+      <div>
+        <h3>Language and Location</h3>
+        <div>
+          <select>
+            <option selected>English</option>
+            <option>French</option>
+            <option>Deutsch</option>
+            <option>普通话</option>
+            <option>中文</option>
+          </select>
+          <select>
+            <option selected>India</option>
+            <option>Afghanistan</option>
+            <option>Australia</option>
+            <option>Bangladesh</option>
+            <option>Bhutan</option>
+            <option>Brazil</option>
+            <option>Colombia</option>
+            <option>Egypt</option>
+            <option>Denmark</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Indonesia</option>
+            <option>Ireland</option>
+            <option>Iceland</option>
+            <option>Kuwait</option>
+            <option>Mexico</option>
+            <option>New Zealand</option>
+            <option>Oman</option>
+            <option>Russia</option>
+            <option>china</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="footer3">
+      <div class="foot-left3">
+        <a href="">Contact Us</a>
+        <a href="">Press Resources</a>
+        <a href="">Legal Info</a>
+        <a href="">Corporate Information</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Cookie Settings</a>
+        <a href="">Imprint</a>
+      </div>
+      <div class="footer3logo">
+        <p>Made in Berlin</p>
+        <img
+          src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg"
+          alt="">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

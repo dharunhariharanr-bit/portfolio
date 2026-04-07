@@ -564,281 +564,6 @@
       position: relative;
       overflow: hidden;
     }
-
-
-    
-    /* ── REVIEWS ── */
-    .reviews-bg {
-      background: var(--bg);
-    }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .review-card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
-      transition: transform .2s;
-    }
-
-    .review-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .review-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      margin-bottom: 14px;
-      background: linear-gradient(135deg, var(--purple-light), var(--mint));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-
-    .review-card p {
-      font-size: 0.875rem;
-      color: var(--gray);
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
-
-    .review-name {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.875rem;
-    }
-
-    .review-role {
-      font-size: 0.78rem;
-      color: var(--gray);
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 60px 60px;
-    }
-
-    .cta-banner {
-      background: var(--purple);
-      border-radius: 28px;
-      padding: 52px 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 16px 48px rgba(108, 92, 231, .3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-banner::before {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, .06);
-      top: -100px;
-      right: -60px;
-    }
-
-    .cta-banner::after {
-      content: '';
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, .04);
-      bottom: -80px;
-      left: 100px;
-    }
-
-    .cta-text h2 {
-      font-family: 'Syne', sans-serif;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    .cta-text p {
-      color: rgba(255, 255, 255, .75);
-      font-size: 0.9rem;
-    }
-
-    /* ── FAQ ── */
-    .faq-bg {
-      background: #fff;
-    }
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .faq-heading h2 {
-      font-family: 'Syne', sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-
-    .faq-heading h2 span {
-      color: var(--purple);
-    }
-
-    .faq-heading p {
-      color: var(--gray);
-      margin-top: 16px;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .faq-item {
-      background: var(--bg);
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid var(--gray-light);
-    }
-
-    .faq-q {
-      padding: 18px 24px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: color .2s;
-    }
-
-    .faq-q:hover {
-      color: var(--purple);
-    }
-
-    .faq-icon {
-      font-size: 1.2rem;
-      color: var(--purple);
-      transition: transform .3s;
-    }
-
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-    }
-
-    .faq-a {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease;
-      padding: 0 24px;
-      color: var(--gray);
-      font-size: 0.875rem;
-      line-height: 1.7;
-    }
-
-    .faq-item.open .faq-a {
-      max-height: 200px;
-      padding-bottom: 18px;
-    }
-
-    /* ── FOOTER ── */
-    .footer-cta-bar {
-      background: var(--bg);
-      border-top: 1px solid var(--gray-light);
-      padding: 36px 60px;
-      max-width: 100%;
-    }
-
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .footer-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--purple-light), var(--mint));
-    }
-
-    .footer-brand-text {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    .footer-brand-text span {
-      display: block;
-      font-weight: 400;
-      font-size: 0.8rem;
-      color: var(--gray);
-      font-family: 'DM Sans', sans-serif;
-    }
-
-    .footer-cta-right {
-      background: var(--purple);
-      border-radius: 20px;
-      padding: 24px 36px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
-      flex: 1;
-      max-width: 460px;
-    }
-
-    .footer-cta-right h4 {
-      font-family: 'Syne', sans-serif;
-      color: #fff;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-
-    .footer-cta-right p {
-      color: rgba(255, 255, 255, .7);
-      font-size: 0.8rem;
-      margin-top: 4px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 60px;
-      font-size: 0.8rem;
-      color: var(--gray);
-      background: var(--bg);
-      border-top: 1px solid var(--gray-light);
-    }
-
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from {
@@ -921,6 +646,14 @@
 
       .footer-cta-right {
         max-width: 100%;
+      }
+
+      .cards {
+        display: block;
+      }
+
+      .card {
+        display: block;
       }
     }
     .marquee-bar {
@@ -1069,6 +802,201 @@
     .card-1 .grade-num { color: #00f5c4; }
     .card-2 .grade-num { color: #a78bfa; }
     .card-3 .grade-num { color: #ff4f8b; }
+      footer {
+      background: #0a0a0a;
+    }
+
+    /* ── Top Grid ── */
+    .footer-top {
+      padding: 3rem 4rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    .footer-brand h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #222;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #666;
+      font-size: 13px;
+      font-weight: 700;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .social-icons a:hover {
+      border-color: #00e5c3;
+      color: #00e5c3;
+    }
+
+    .footer-col h3 {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #00e5c3;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-col a,
+    .footer-col p {
+      display: block;
+      font-size: 14px;
+      color: #888;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-col .contact-info {
+      font-size: 13px;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 22px;
+      background: #6c3ff5;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-contact:hover { background: #5a2fd4; }
+
+    /* ── CTA Banner ── */
+    .footer-cta {
+      margin: 2.5rem 4rem;
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-cta h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .footer-cta h3 span { color: #00e5c3; }
+
+    .footer-cta p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      padding: 10px 22px;
+      background: #6c3ff5;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover { background: #5a2fd4; }
+
+    .btn-outline {
+      padding: 10px 22px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: #00e5c3;
+      color: #00e5c3;
+    }
+
+    /* ── Bottom Bar ── */
+    .footer-bottom {
+      padding: 1.2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid #141414;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color:white;
+    }
+
+    .footer-bottom span { color: #00e5c3; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+      }
+      .footer-cta {
+        margin: 1.5rem 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-bottom {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-top { grid-template-columns: 1fr; padding: 1.5rem; }
+      .footer-cta { margin: 1rem 1.5rem; }
+    }
+    
   </style>
 </head>
 
@@ -1106,15 +1034,15 @@
       <h1>HELLO! I'm Dharun Hariharan R,<br><span>UI/UX</span> designer</h1>
       <p>I am UI/UX Designer and Frontend Developer focused on creating clean, user-friendly, and responsive web experiences.Strong understanding of user-centered design principles, wireframing, prototyping, and usability testing.Skilled in converting design concepts into functional websites using HTML, CSS, JavaScript, and Bootstrap..</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="http://127.0.0.1:5500/protofile.html" class="btn btn-primary">View Portfolio</a>
+        <a href="#project" class="btn btn-primary">View Portfolio</a>
         <a href="./myresume.pdf" download="My_Resume.pdf" class="btn btn-outline">Download CV</a>
       </div>
       <div class="hero-socials">
         <a href="https://www.linkedin.com/in/dharun-hariharan-460670292/" class="social-icon" title="LinkedIn">
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="" width="70px" height="70px">
         </a>
-        <a href="https://dribbble.com/dharunhariharanr" class="social-icon" title="Dribbble">
-          <img src="https://static.vecteezy.com/system/resources/previews/023/986/985/non_2x/dribbble-logo-dribbble-logo-transparent-dribbble-icon-transparent-free-free-png.png" alt="" width="57px" height="57px">
+        <a href="https://github.com/dharunhariharanr-bit" class="social-icon" title="Gitup">
+          <img src="https://cdn-icons-png.freepik.com/512/5968/5968866.png" alt="" width="60px" height="60px">
         </a>
         <a href="https://www.behance.net/dharunvisa" class="social-icon" title="Webflow">
           <img src="https://static.vecteezy.com/system/resources/thumbnails/065/386/497/small_2x/behance-circle-logo-icon-be-app-transparent-background-premium-social-media-design-for-digital-download-free-png.png" alt="" width="45px" height="45px">
@@ -1251,7 +1179,7 @@
             </div>
             <h3>Monogram Website (Frontend)</h3>
             <p>I recreated the frontend of the Monogram website as part of my frontend development practice, focusing on building a visually engaging and user-friendly interface. This project helped me strengthen my skills in HTML, CSS, and JavaScript by replicating modern UI layouts, smooth navigation, and responsive design techniques.</p>
-            <a href="http://127.0.0.1:5500/html/css%20web3.html" class="btn btn-primary" style="width:fit-content;font-size:0.8rem;padding:9px 20px;">View Project →</a>
+            <a href="./css web3.html" class="btn btn-primary" style="width:fit-content;font-size:0.8rem;padding:9px 20px;">View Project →</a>
           </div>
           <div class="port-preview">
             <img src="./indeximg2.png" alt="" height="300px" width=500px">
@@ -1265,7 +1193,7 @@
             </div>
             <h3>Ableton Website (Frontend)</h3>
             <p>I developed the interface using HTML, CSS, and Bootstrap, ensuring that the layout adapts smoothly across different screen sizes. The project helped me improve my skills in responsive design, layout structuring, and creating pixel-perfect UI components. I also focused on maintaining consistency in colors, fonts, and alignment to match real-world design standards.</p>
-            <a href="http://127.0.0.1:5500/html/css%20web4.html" class="btn btn-primary" style="width:fit-content;font-size:0.8rem;padding:9px 20px;">View Project →</a>
+            <a href="./css web4.html" class="btn btn-primary" style="width:fit-content;font-size:0.8rem;padding:9px 20px;">View Project →</a>
           </div>
           <div class="port-preview">
             <img src="./indeximg3.png" alt="" height="350px" width=500px">
@@ -1319,144 +1247,85 @@
     </div>
 
   </div>
-
-
-  <!-- REVIEWS -->
-  <div class="reviews-bg">
-    <section class="section fade-in">
-      <h2 class="section-title">Customers reviews</h2>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-avatar">A</div>
-          <p>"To say that the Community continues to be the best place to find highly resources, we ask that you and the
-            following."</p>
-          <div class="review-name">Anna Adams</div>
-          <div class="review-role">Designer</div>
-        </div>
-        <div class="review-card">
-          <div class="review-avatar" style="background:linear-gradient(135deg,var(--pink),var(--purple-light));">M</div>
-          <p>"To say that the Community continues to be the best place to find highly resources, we ask that you and the
-            following."</p>
-          <div class="review-name">Maria Morales</div>
-          <div class="review-role">Designer</div>
-        </div>
-        <div class="review-card">
-          <div class="review-avatar" style="background:linear-gradient(135deg,var(--mint),#74b9ff);">R</div>
-          <p>"To say that the Community continues to be the best place to find highly resources, we ask that you and the
-            following."</p>
-          <div class="review-name">Rose Williams</div>
-          <div class="review-role">Designer</div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:32px;">
-        <button class="btn btn-outline" style="padding:8px 20px;font-size:0.82rem;">← &nbsp;&nbsp; →</button>
-      </div>
-    </section>
-  </div>
-
-  <!-- CTA -->
-  <section class="cta-section fade-in">
-    <div class="cta-banner">
-      <div class="cta-text">
-        <h2>Try me out, risk free!</h2>
-        <p>If you're not happy with the design after the first draft, I'll refund your deposit — <strong
-            style="color:#fff;">no questions asked.</strong></p>
-      </div>
-      <a href="#" class="btn btn-white" style="white-space:nowrap;position:relative;z-index:1;">Let's Talk →</a>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <div class="faq-bg">
-    <section class="section fade-in">
-      <div class="faq-grid">
-        <div class="faq-heading">
-          <h2>Frequently Asked <span>Questions</span></h2>
-          <p>If you have any other questions, you can contact me by email: <a href="mailto:hello@designer.com"
-              style="color:var(--purple);">hello@designer.com</a></p>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item open">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Do you do web design or web development?
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-a">I exclusively design in Webflow which means I am able to design AND develop
-              simultaneously. I use design templates for efficiency, which means I then use the knowledge of design to
-              bring your vision to life through the design process.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              How long does a website take to build?
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-a">Typically a full website project takes 3–6 weeks depending on the scope and complexity of
-              the design. I'll give you a clear timeline before we begin.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Will you work on the project in your timezone or mine?
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-a">I work asynchronously and communicate clearly across time zones. We'll set up a schedule
-              that works for both of us.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              I'm an agency, what can you do for us?
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-a">I offer white-label design and development services for agencies. I can work as an
-              extension of your team and deliver high-quality Webflow builds under your brand.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- FOOTER CTA -->
-  <div class="footer-cta-bar">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-avatar"></div>
-        <div class="footer-brand-text">
-          Laura Portfolio
-          <span>Let's build it together.</span>
-        </div>
-        <div style="display:flex;gap:10px;margin-left:20px;">
-          <a href="#" class="btn btn-outline" style="padding:8px 18px;font-size:0.8rem;">in LinkedIn</a>
-          <a href="#" class="btn btn-outline" style="padding:8px 18px;font-size:0.8rem;">Book a Discovery Call 📅</a>
-        </div>
-      </div>
-      <div class="footer-cta-right">
-        <div>
-          <h4>Try me out, risk free!</h4>
-          <p>Let's build something amazing together.</p>
-        </div>
-        <a href="#" class="btn btn-white" style="font-size:0.8rem;padding:9px 18px;white-space:nowrap;">Contact →</a>
-      </div>
-    </div>
-  </div>
-
   <footer>
-    <p>Made with ❤️ by Laura &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; <a href="#"
-        style="color:var(--purple);text-decoration:none;">laura@designer.com</a></p>
-  </footer>
 
-  <script>
-    // FAQ toggle
-    function toggleFaq(el) {
-      const item = el.parentElement;
-      item.classList.toggle('open');
-    }
+  <!-- Top Grid -->
+  <div class="footer-top">
 
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2> <span class="blue">Dharun</span> Project</h2>
+      <p>UI/UX Designer & Frontend Developer crafting clean, user-friendly, and responsive web experiences.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dharun-hariharan-460670292/">
+          <img src="https://static.vecteezy.com/system/resources/previews/023/986/926/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="" width="50px" height="50px">
+        </a>
+        <a href="https://github.com/dharunhariharanr-bit">
+          <img src="https://cdn-icons-png.freepik.com/512/5968/5968866.png" alt="" width="40px" height="40px">
+        </a>
+        <a href="https://www.behance.net/dharunvisa">
+          <img src="https://static.vecteezy.com/system/resources/previews/065/386/509/non_2x/behance-black-logo-icon-be-app-transparent-background-premium-social-media-design-for-digital-download-free-png.png" alt="" width="70px" height="70px">
+        </a>
+        <a href="https://wa.me/917339297255" target="_blank">
+          <img src="./indeximg4.png"alt="WhatsApp" width="40" height="40"
+  />
+</a>
+      </div>
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <a href="#">Home</a>
+      <a href="#about">About me</a>
+      <a href="#project">Projects</a>
+      <a href="./myresume.pdf">Resume</a>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Services</h3>
+      <p>UI/UX Design</p>
+      <p>Frontend Dev</p>
+      <p>Wireframing</p>
+      <p>Prototyping</p>
+      <p>Poster Design</p>
+      <p>Website Design</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <a href="mailto:dharunhariharanr@gmail.com">dharunhariharanr@gmail.com</a>
+      <a href="tel:+91 7339297255">+91 7339297255</a>
+      <p class="contact-info">Tiruppur, Tamil Nadu</p>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="footer-cta">
+    <div>
+      <h3>Let's work together <span>✦</span></h3>
+      <p>Have a project in mind? I'd love to hear about it.</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="#project" class="btn-primary">View Portfolio</a>
+      <a href="./myresume.pdf" download="My_Resume.pdf" class="btn btn-outline">Download CV</a>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2026 Dharun Hariharan R. All rights reserved.</p>
+    <p>Designed & Built with passion</p>
+  </div>
+</footer>
+<script>
     // Scroll fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
-
 </body>
-
 </html>

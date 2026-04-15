@@ -647,14 +647,6 @@
       .footer-cta-right {
         max-width: 100%;
       }
-
-      .cards {
-        display: block;
-      }
-
-      .card {
-        display: block;
-      }
     }
     .marquee-bar {
       position: relative;
@@ -804,6 +796,19 @@
     .card-3 .grade-num { color: #ff4f8b; }
       footer {
       background: #0a0a0a;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        display: block;
+      }
+      .card {
+        display: block;
+      }
+      .card-icon {
+        display: block;
+      }
+      
     }
 
     /* ── Top Grid ── */
@@ -1025,7 +1030,7 @@
       <li><a href="#project">Projects</a></li>
       <li><a href="./myresume.pdf">Resume</a></li>
     </ul>
-    <a href="#" class="btn btn-primary">Contact ↗</a>
+    <a href="#contact" class="btn btn-primary">Contact ↗</a>
   </nav>
 
   <!-- HERO -->
@@ -1294,7 +1299,7 @@
     </div>
 
     <!-- Contact -->
-    <div class="footer-col">
+    <div class="footer-col" id="contact">
       <h3>Contact</h3>
       <a href="mailto:dharunhariharanr@gmail.com">dharunhariharanr@gmail.com</a>
       <a href="tel:+91 7339297255">+91 7339297255</a>
